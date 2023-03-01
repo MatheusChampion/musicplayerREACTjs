@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CyberTape</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            defer
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <script defer src="./js/script.js"></script>
+        <!-- Logo  -->
+        <header class="container-fluid drag">
+            <div class="logo m-auto">
+                <img
+                    src="./images/logo-v5.png"
+                    alt="cyberTape Logo"
+                    class="img-fluid"
+                >
+            </div>
+        </header>
+        <!-- Body Container -->
+        <div class="body_container container-fluid">
+            <div class="row bg-container">
+                <!-- Player Container -->
+                <div class="player_container">
+                    <!-- Import audio -->
+                    <audio class="audio_src">
+                        <source src="" type="audio/mp3" />
+                    </audio>
+                    <!-- Import image as background image from css -->
+                    <!-- Music Name -->
+                    <div class="music_name row align-items-center">
+                        <div class="col px-2">
+                            <p class=" music_place_name text-break text-wrap text-center">
+                                placeholder for song name
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Image album holder -->
+                    <div class="album_cover row p-0 ">
+                        <img
+                                src="./images/cover_place_holder.jpg"
+                                alt="cover"
+                                class="col cover-img img_fluid p-0 "
+                        />
+                        <p class=" col album_name text-center text-break p-0">Place holder album</p>
+                    </div>
+                    <!-- Player time -->
+                    <div class="time row">
+                        <div class="row ">
+                            <span class="current col ms-0 ps-0"
+                                >0:00 &nbsp;&nbsp;</span
+                            >
+                            <span class="duration col "
+                                >&nbsp;&nbsp;0:00</span
+                            >
+                        </div>
+                        <div class="audio-progress p-0">
+                            <div class="audio-progress-filled"></div>
+                        </div>
+                    </div>
+                    <!-- Artist name -->
+                    <div class="artist row text-center p-0">
+                        <p class="a_name">Place holder Artist</p>
+                    </div>
+                    <!-- Player buttons -->
+                    <div class="buttons-container row">
+                        <div class="p-container">
+                            <div class="players row">
+                                <!-- Shuffle -->
+                                <button class="col shuffle-button icon" title="Shuffle">
+                                    <img
+                                        src="./images/shuffle.png"
+                                        alt="shuffle icon"
+                                        class="icon-img img_fluid"
+                                    />
+                                </button>
+                                <!-- Previous -->
+                                <button class="col previous-music icon" title="Previous">
+                                    <img
+                                        src="./images/Backward.png"
+                                        alt="Previous Music"
+                                        class="icon-img img_fluid"
+                                    />
+                                </button>
+                                <!-- Play -->
+                                <button class="col play-button icon" title="Play">
+                                    <img
+                                        src="./images/Play.png"
+                                        alt="Play icon"
+                                        class="icon-img img_fluid"
+                                    />
+                                </button>
+                                <!-- Next -->
+                                <button class="col next-music icon" title="Next">
+                                    <img
+                                        src="./images/Forward.png"
+                                        alt="Next icon"
+                                        class="icon-img img_fluid"
+                                    />
+                                </button>
+                                <!-- Repeat -->
+                                <button class="col repeat-button icon" title="Repeat">
+                                    <img
+                                        src="./images/repeat.png"
+                                        alt="Loop icon"
+                                        class="icon-img img_fluid"
+                                    />
+                                </button>
+                            </div>
+                            <!-- Volume controls -->
+                            <div class="volume-container d-flex flex-row">
+                                <!-- Lower volume -->
+                                <button
+                                    class="volume-lower-button icon"
+                                    title="Low volume"
+                                >
+                                    <img
+                                        src="./images/volume_low.png"
+                                        alt="volume minimun icon"
+                                        class="icon-img-vol img_fluid"
+                                    />
+                                </button>
+                                <!-- Range for volume -->
+                                <input
+                                    type="range"
+                                    class="volume"
+                                    min="0"
+                                    max="1"
+                                    step="0.01"
+                                    value="0.5"
+                                />
+                                <!-- Max volume -->
+                                <button
+                                    class="volume-max-button icon"
+                                    title="max volume"
+                                >
+                                    <img
+                                        src="./images/volume_max.png"
+                                        alt="volume max icon"
+                                        class="icon-img-vol img_fluid"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Music List -->
+            <div class="row music_list container-fluid">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>COVER</th>
+                            <th>TITLE</th>
+                            <th>ALBUM</th>
+                            <th>ARTIST</th>
+                            <th>YEAR</th>
+                            <th>🕒</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    </body>
+</html>

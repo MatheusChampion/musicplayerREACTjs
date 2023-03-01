@@ -1,0 +1,140 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #534947;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.main_container {
+    max-width: 700px;
+    max-height: 800px;
+    min-width: 500px;
+}
+
+header {
+    /* Media query */
+    max-width: 300px;
+}
+
+.name_of_music {
+    max-width: 480px;
+    max-height: 90px;
+}
+
+.cover{
+    max-width: 120px;
+    max-height: 45px;
+}
+.img_cover {
+    max-width: 40px;
+}
+
+.artist-name{
+    max-width: 50px;
+    max-height: 40px;
+    color: #945E55;
+    font-size: .9vw;
+}
+
+.music_name {
+    color: #945E55;
+    max-height: 60px;
+    font-size: 2vw;
+}
+
+.general_container {
+    max-height: 350px;
+}
+
+.music_list{
+    background-color: #ea9c001f;
+    font-size: 1.7vw;
+    max-width: 530px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.music_list option { 
+    margin-bottom: .5px;
+    width: 100%;
+    border: 1px solid #ffffff;
+}
+
+.icon {
+    background-color: transparent;
+    border: none;
+}
+
+.icon-img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.icon-img-vol {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.time {
+    max-width: 200px;
+    max-height: 50px;
+    font-size: 1.5vw;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.time:hover .audio-progress{
+    height: 10px;
+}
+
+.volume-container {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    align-content: center;
+}
+
+.audio-progress {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 5px;
+    transition: .3s;
+    background: white;
+    cursor: pointer;
+}
+
+.audio-progress-filled {
+    width: 0;
+    background: #ea9d00;
+}
+
+.volume {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 14vw;
+}
+
+
+.volume::-webkit-slider-runnable-track {
+    background: white;
+    border-radius: 10px;
+}
+
+.volume:focus {
+    outline: none;
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background: #ea9d00;
+    cursor: pointer;
+}

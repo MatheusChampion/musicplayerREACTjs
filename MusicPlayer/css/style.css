@@ -1,0 +1,219 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-width: 800px;
+}
+body{
+    background-image: linear-gradient(#a78c56, #ea9d00, #f1d69f,  #ea9d00, #a78c56);
+    font-family: 'Patrick Hand', cursive;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.drag {
+    -webkit-app-region: drag;
+}
+
+header{
+    margin-top: 3%;
+    max-width: 50%;
+    margin-bottom: 5%;
+}
+header > .logo {
+    max-width: 50%;
+    min-width: 10%;
+}
+.body_container{
+    max-width: 70%;
+}
+
+.bg-container{
+    background-image: url("../images/background-v2.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.player_container {
+    margin-left:1.5vh;
+    margin-right: 1.5vh;
+    height: 100%;
+    width: 100%;
+}
+
+.music_name {
+    margin-left: 12%;
+    
+    margin-top: 5%;
+    height: 8vh;
+    width: 60vh;
+    color: #945E55;
+    font-size: 1.5em;
+}
+
+.a_name{
+    padding-top: 9px;
+    color: #aa3e2b;
+    max-width: 500px;
+    margin-left: 15%;
+    height: 30px;
+}
+
+.album_cover_list {
+    max-width: 50px;
+}
+
+.cover-img {
+    height: 40px;
+    max-width: 46px;
+}
+
+.album_cover  {
+    margin-top: 33px;
+    width: 137px;
+    max-height: 80px;
+    margin-left: 278px;
+}
+
+.album_name {
+    max-height: 50px;
+    font-size: .8em;
+    color: #945E55;
+    margin-left: 7px;
+}
+
+.buttons-container {
+    max-width: 270px;
+    max-height: 60px;
+    margin-left: 30%;
+    margin-bottom: 21px;
+}
+.p-container {
+    max-height: 60px;
+}
+
+.volume-container {
+    max-width: 190px;
+    min-width: 190px;
+    margin-left: 15%;
+}
+
+.music_list {
+    margin-left: 2%;
+    margin-top: 3%;
+    max-width: 92%;
+}
+
+/* Icon */
+.icon {
+    background-color: transparent;
+    border: none;
+}
+.icon-img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.icon-img-vol {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+/* Volume Bar*/
+
+
+.volume::-webkit-slider-runnable-track {
+    background: white;
+    border-radius: 10px;
+}
+
+.volume:focus {
+    outline: none;
+}
+
+.volume::-webkit-slider-thumb {
+    /* -webkit-appearance: none; */
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background: #ea9d00;
+    cursor: pointer;
+}
+
+/* Progress Time */
+
+.time {
+    margin-left: 40%;
+    padding-top: 10px;
+    max-width: 190px;
+    max-height: 50px;
+    font-size: 1.5vw;
+    color: gray;
+    
+}
+
+.time:hover .audio-progress{
+    height: 10px;
+    margin-bottom: -5px;
+}
+
+.audio-progress {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 5px;
+    transition: .3s;
+    background: white;
+    cursor: pointer;
+    max-width: 120px;
+}
+
+.audio-progress-filled {
+    width: 0;
+    background: #ea9d00;
+}
+
+.volume {
+    /* -webkit-appearance: none; */
+    background: transparent;
+    width: 105px;
+}
+
+/* Table */
+.table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid rgb(134, 133, 133);
+    padding: 0.5rem 1rem;
+}
+
+tr:hover {
+    background-color: #c4b496;
+}
+
+thead > tr {
+    background-color: #796303;
+    color: white;
+    cursor:default; 
+}
+tbody > tr { 
+    background-color: #caba9996;
+    cursor:pointer;
+}
+
+#selected {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.selected-row {
+    background-color: #dbcfb7 !important;
+}
