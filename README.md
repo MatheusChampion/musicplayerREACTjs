@@ -1,4 +1,4 @@
-# 🎵 Excited to Share My Latest Project: Music Player Built with ReactJS! 🎶
+# 🎵 My Latest Project: Music Player Built with ReactJS! 🎶
 
 A small project using the ReactJS framework to create a simple yet dynamic music player.
 
